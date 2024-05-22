@@ -3,7 +3,7 @@ public class Empleado extends Persona {
 
     //Constructor con parámetros
     public Empleado(String nombre, String apellido, String genero, int edad, String cargo){
-        super();
+        super(nombre,apellido, genero,edad);
         this.cargo = cargo;
     }
 
@@ -21,10 +21,10 @@ public class Empleado extends Persona {
         System.out.println("Capacitación específica para empleados");
     }
 
-    // Implementación del método abstracto jefe()
+    // Implementación del método jefe()
     @Override
-    public void jefe() {
-        System.out.println("Soy un empleado y tengo un jefe.");
+    public String mostrarInformacion(){
+        return super.mostrarInformacion()+ "\nCargo: "+cargo;
     }
     
 

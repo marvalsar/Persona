@@ -3,7 +3,7 @@ public class Jefe extends Persona{
 
     //Constructor
     public Jefe(String nombre, String apellido, String genero, int edad, String departamentoJefe) {
-        super(); // Llama al constructor de la clase Persona
+        super(nombre, apellido, genero, edad); // Llama al constructor de la clase Persona
         this.departamentoJefe = departamentoJefe;
     }
 
@@ -18,10 +18,9 @@ public class Jefe extends Persona{
     public void setDepartamentoJefe(String departamentoJefe){
         this.departamentoJefe = departamentoJefe;
     } 
-    // Implementación del método abstracto
+    // Implementación del método 
     @Override
-
-    public void jefe() {
-        System.out.println("Soy un jefe.");
+    public String mostrarInformacion(){
+        return super.mostrarInformacion()+ "\nDepartamento: "+departamentoJefe;
     }
 }

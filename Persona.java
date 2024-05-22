@@ -4,6 +4,13 @@ public abstract class Persona{
     private String genero;
     private int edad;
 
+    public Persona(String nombre, String apellido, String genero, int edad){
+        this.nombre = nombre;
+        this.apellido =  apellido;
+        this.genero = genero;
+        this.edad = edad;
+    }
+
     //Constructor
     public Persona(){
     }
@@ -34,7 +41,9 @@ public abstract class Persona{
         return edad;
     }
 
-    // Método abstracto que debe implementarse en las clases hijas
-    public abstract void jefe();
+    // Método debe implementarse en las clases hijas
+    public String mostrarInformacion(){
+        return "Nombre: "+nombre+ "\nApellido: "+apellido+ "Genero: "+genero+ "\nEdad: "+edad;
+    }
 
 }
