@@ -7,7 +7,7 @@ public class Jefe extends Persona{
         this.departamentoJefe = departamentoJefe;
     }
 
-    //Constructro vacio
+    //Constructor vacio
     public Jefe(){
         super();
     }
@@ -18,6 +18,7 @@ public class Jefe extends Persona{
     public void setDepartamentoJefe(String departamentoJefe){
         this.departamentoJefe = departamentoJefe;
     } 
+    
     // Implementación del método 
     @Override
     public String mostrarInformacion(){

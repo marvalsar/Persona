@@ -7,6 +7,11 @@ public class Empleado extends Persona {
         this.cargo = cargo;
     }
 
+    //Constructor vacío
+    public Empleado(){
+
+    }
+    
     // Getter y Setter para cargo
     public String getCargo() {
         return cargo;
@@ -21,7 +26,7 @@ public class Empleado extends Persona {
         System.out.println("Capacitación específica para empleados");
     }
 
-    // Implementación del método jefe()
+    // Implementación del método
     @Override
     public String mostrarInformacion(){
         return super.mostrarInformacion()+ "\nCargo: "+cargo;
